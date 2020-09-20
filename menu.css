@@ -22,11 +22,11 @@ a:hover {
 }
 
 .header {
-  position: fixed;
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0px;
+  padding: 5px;
   background: #D6E9FE;
 }
 
@@ -81,4 +81,44 @@ a:hover {
 
 .features-menu {
   display: none;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  outline: none;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #5D6063;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #B2D6FF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #5D6063;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #FFF;
+}
+
+.dropdown-content a:hover {
+  background-color: #a2c4eb;
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+
+.dropdown:hover .dropdown-btn {
+  background-color: #B2D6FF;
 }
