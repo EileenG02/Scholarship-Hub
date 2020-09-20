@@ -69,6 +69,7 @@ a:hover {
 
 .dropdown {
   position: relative;
+  display: inline-block;
   padding-right: 100px;
 }
 
